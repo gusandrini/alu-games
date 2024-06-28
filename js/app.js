@@ -1,3 +1,6 @@
+let jogosAlugados = 0;
+
+
 function alterarStatus(id) {
     let gameClicado = document.getElementById(`game-${id}`);
     let imagem = gameClicado.querySelector('.dashboard__item__img');
