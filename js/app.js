@@ -22,8 +22,13 @@ function alterarStatus(id) {
         jogosAlugados++;
     }
 
-    
+    contarExibirJogosAlugados();
 }
 
+
+document.addEventListener('DOMContentLoaded', function(){
+    jogosAlugados = document.querySelector('.dashboard__item__img--rented').length;
+    contarExibirJogosAlugados();
+});
 
 
