@@ -14,7 +14,7 @@ function alterarStatus(id) {
         imagem.classList.remove('dashboard__item__img--rented');
         botao.textContent = 'Alugar';
         botao.classList.remove('dashboard__item__button--return');
-        jogosAlugados--;
+        // jogosAlugados--;
     } else {
         imagem.classList.add('dashboard__item__img--rented');
         botao.textContent = 'Devolver';
@@ -26,9 +26,6 @@ function alterarStatus(id) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function(){
-    jogosAlugados = document.querySelector('.dashboard__item__img--rented').length;
-    contarExibirJogosAlugados();
-});
+
 
 
