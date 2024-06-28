@@ -5,8 +5,10 @@ function alterarStatus(id) {
 
     if (imagem.classList.contains('dashboard__item__img--rented')) {
         imagem.classList.remove('dashboard__item__img--rented');
+        botao.textContent = 'Alugar';
     } else {
         imagem.classList.add('dashboard__item__img--rented');
+        botao.textContent = 'Devolver';
     }
 
     
